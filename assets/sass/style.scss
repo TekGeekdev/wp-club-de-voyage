@@ -1,9 +1,9 @@
 /*
-Theme Name: 4W4 - Eddy Martin
-Theme URI: https://referenced.ca
-Author: Eddy Martin
-Author URI: https://github.com/eddytuto
-Description: Thème de base développer dans le cadre du cours 4W4
+Theme Name: TekGeek_dev
+Theme URI: 
+Author: Mathieu Nicolas
+Author URI: https://github.com/TekGeekdev/wp-club-de-voyage
+Description: theme wordpress tp-01
 Version: 1.0
 Tested up to: 6.2
 Requires PHP: 7.0
@@ -20,11 +20,11 @@ Les Variables
 /* /////////////////////////
 Les composants
 /////////////////////////// */
-@import "composants/menu";
+@import "composants/nav-top";
 @import "composants/carte";
 
 /* /////////////////////////
 Layout 
 /////////////////////////// */
 @import "layout/principal";
-@import "layout/entete";
+@import "layout/header";

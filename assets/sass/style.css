@@ -15,10 +15,18 @@ Text Domain: 4w4-eddy
 /* /////////////////////
 Les Variables
 //////////////////////// */
+body {
+  display: none;
+}
+
 /* /////////////////////////
 Les composants
 /////////////////////////// */
 /* /////////////////////////////////////////// menu principal */
+body {
+  display: none;
+}
+
 .menu {
   margin: 0;
   padding: 0;

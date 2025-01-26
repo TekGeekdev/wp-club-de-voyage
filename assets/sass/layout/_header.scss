@@ -1,11 +1,11 @@
-.entete{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &__nav {
-        display: flex;
-
+    &__nav{
+       display: flex;
+       gap: 20px;
     }
 }
 
