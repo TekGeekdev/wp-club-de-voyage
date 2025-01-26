@@ -12,11 +12,36 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 4w4-eddy
 */
 /* /////////////////////
+Les Bases
+//////////////////////// */
+a, p {
+  font-family: "Montserrat", serif;
+  font-style: normal;
+}
+
+h1 .sriracha-regular, h2 .sriracha-regular, h3 .sriracha-regular, h4 .sriracha-regular {
+  font-family: "Sriracha", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* /////////////////////
 Les Variables
 //////////////////////// */
 /* /////////////////////////
 Les composants
 /////////////////////////// */
+.nav_list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: black;
+}
+
 /* *******************
 Le composant .carte
 ********************** */
@@ -79,4 +104,5 @@ Layout
 .header__nav {
   display: flex;
   gap: 20px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
