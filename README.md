@@ -2,7 +2,7 @@
 
 ## Travail pratique pour initiation aux gestionnaire de contenu Wordpress
 
-- [✓] Créer un site WordPress pour un club de voyage offrant à ses membres des voyages exclusifs vers des destinations uniques à travers le monde.
+- [x] Créer un site WordPress pour un club de voyage offrant à ses membres des voyages exclusifs vers des destinations uniques à travers le monde.
 - [ ] Organiser les destinations en différentes catégories afin de permettre aux membres de rechercher facilement des voyages en fonction de leurs préférences
 - [ ] Concevoir un design attrayant et fonctionnel qui met en valeur les offres spéciales réservées aux membres du club.
 - [ ] Déployer le site final sur un serveur de Web Hosting Canada.
