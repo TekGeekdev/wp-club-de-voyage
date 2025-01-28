@@ -21,3 +21,9 @@ main>* {
 .full-bleed {
 	grid-column: 1/-1;
 }
+
+.grid_cartes{
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+	gap: 20px;
+}
