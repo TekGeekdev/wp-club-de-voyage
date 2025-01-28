@@ -7,8 +7,6 @@
 - [ ] Concevoir un design attrayant et fonctionnel qui met en valeur les offres spéciales réservées aux membres du club.
 - [ ] Déployer le site final sur un serveur de Web Hosting Canada.
 
-
-
 ### Étapes
 
 1. TP1 étape #1 : Reproduire un prototype HTML/CSS de la page d’accueil
@@ -17,7 +15,7 @@
 
 3. TP1 étape #3 : Ajouter de nouvelles sections au site
 
-
+### [club-voyage](https://tekgeekdev.github.io/wp-club-de-voyage/)
 
 
 
