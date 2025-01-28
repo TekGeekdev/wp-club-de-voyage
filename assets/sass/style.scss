@@ -20,15 +20,18 @@ Les Bases
 Les Variables
 //////////////////////// */
 @import "variables/couleurs";
+@import "variables/size";
 
 /* /////////////////////////
 Les composants
 /////////////////////////// */
 @import "composants/nav-top";
 @import "composants/carte";
+@import "composants/hero";
 
 /* /////////////////////////
 Layout 
 /////////////////////////// */
+@import "layout/grid";
 @import "layout/principal";
 @import "layout/header";
