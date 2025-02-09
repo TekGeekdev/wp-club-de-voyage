@@ -5,7 +5,7 @@
 
 <body class="wrapper">
     <header class="header">
-        <img class="header__logo" src="assets/images/Club.png" alt="logo du site">
+        <img class="header__logo" src="./assets/images/Club.png" alt="logo du site">
         <input type="checkbox" class="header__check">
         <div class="header__nav">
 
@@ -49,6 +49,15 @@
                 </div>
             </div>
         </section>
+        <section class="post">
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <article>
+                        <h2><?php the_title(); ?></h2>
+                        <div><?php the_content(); ?></div>
+                    </article>
+            <?php endwhile;
+            endif; ?>
+        </section>
         <section class="galerie">
             <figure class="galerie__fig">
                 <img src="" alt="">
@@ -89,4 +98,5 @@
     </main>
     <?php get_footer(); ?>
 </body>
+
 </html>
