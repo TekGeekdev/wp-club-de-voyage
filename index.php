@@ -1,4 +1,29 @@
-<?php wp_head(); ?> 
+<!DOCTYPE html>
+<html lang="en">
+
+<?php get_header(); ?>
+
+<body class="wrapper">
+    <header class="header">
+        <img class="header__logo" src="assets/images/Club.png" alt="logo du site">
+        <input type="checkbox" class="header__check">
+        <div class="header__nav">
+
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav__item"><a class="nav_link nav_link-active" href="">Aventure</a></li>
+                    <li class="nav__item"><a class="nav_link" href="">Sportive</a></li>
+                    <li class="nav__item"><a class="nav_link" href="">Culturelle</a></li>
+                    <li class="nav__item"><a class="nav_link" href="">Zen</a></li>
+                </ul>
+            </nav>
+            <form action="" class="header__search">
+                <input type="text" class="recherche__input">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="20" height="20">
+            </form>
+        </div>
+
+    </header>
     <main>
         <section class="hero full-bleed">
             <div class="hero__contenu">
@@ -62,13 +87,6 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <span class="footer_txt">© Par Mathieu Ledeur</span>
-        <div class="footer__social">
-            <img class="footer__social__img" src="assets/images/facebook.svg" alt="">
-            <img class="footer__social__img" src="assets/images/instagram.svg" alt="">
-            <img class="footer__social__img" src="assets/images/youtube.svg" alt="">
-        </div>
-    </footer>
+    <?php get_footer(); ?>
 </body>
 </html>
