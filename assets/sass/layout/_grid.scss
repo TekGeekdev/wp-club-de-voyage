@@ -1,0 +1,29 @@
+body {
+	display: grid;
+	grid-template-columns: 1fr min(calc(100% - 40px), 1000px) 1fr;
+	gap: 20px;
+}
+
+body>* {
+	grid-column: 1/-1;
+}
+
+main {
+	display: grid;
+	grid-template-columns: subgrid;
+	gap: 20px;
+}
+
+main>* {
+	grid-column: 2;
+}
+
+.full-bleed {
+	grid-column: 1/-1;
+}
+
+.grid_cartes{
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+	gap: 20px;
+}
