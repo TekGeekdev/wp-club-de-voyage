@@ -1,18 +1,10 @@
 @charset "UTF-8";
 /*
-<<<<<<< HEAD
-Theme Name: 4W4 - Eddy Martin
-Theme URI: https://referenced.ca
-Author: Eddy Martin
-Author URI: https://github.com/eddytuto
-Description: Thème de base développer dans le cadre du cours 4W4
-=======
 Theme Name: TekGeek_dev
 Theme URI: 
 Author: Mathieu Nicolas
 Author URI: https://github.com/TekGeekdev/wp-club-de-voyage
 Description: theme wordpress tp-01
->>>>>>> 80f4c5d (ajout des fichiers)
 Version: 1.0
 Tested up to: 6.2
 Requires PHP: 7.0
@@ -21,8 +13,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 4w4-eddy
 */
 /* /////////////////////
-<<<<<<< HEAD
-=======
 Les Bases
 //////////////////////// */
 a, p {
@@ -35,27 +25,11 @@ h1, h2, h3, h3 {
 }
 
 /* /////////////////////
->>>>>>> 80f4c5d (ajout des fichiers)
 Les Variables
 //////////////////////// */
 /* /////////////////////////
 Les composants
 /////////////////////////// */
-<<<<<<< HEAD
-/* /////////////////////////////////////////// menu principal */
-.menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.menu__li {
-  display: inline-block;
-}
-.menu__a {
-  color: #333;
-  text-decoration: none;
-  padding: 2px 5px;
-=======
 .nav_list {
   display: flex;
   gap: 20px;
@@ -65,7 +39,6 @@ Les composants
 .nav_link {
   text-decoration: none;
   color: black;
->>>>>>> 80f4c5d (ajout des fichiers)
 }
 
 /* *******************
@@ -109,33 +82,11 @@ Le composant .carte
   background-color: #0056b3;
 }
 
-<<<<<<< HEAD
-/* /////////////////////////
-Layout 
-/////////////////////////// */
-.global {
-  margin: 0 auto;
-  max-width: 1100px;
-}
-
-.hero {
-  min-height: 100vh;
-  background-image: url("images/maldives.jpg");
-}
-
-.entete {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.entete__nav {
-  display: flex;
-=======
 .hero {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background-image: url("../images/maldives.jpg");
+  background-image: url("<?php echo get_template_directory_uri(); ?>../images/maldives.jpg");
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -260,5 +211,4 @@ main > * {
 
 .footer__social__img {
   max-width: 26px;
->>>>>>> 80f4c5d (ajout des fichiers)
 }/*# sourceMappingURL=style.css.map */
