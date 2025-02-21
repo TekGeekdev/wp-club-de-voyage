@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Theme Name: TekGeek_dev
 Theme URI: 
@@ -10,99 +9,186 @@ Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-eddy
+Text Domain: Mathieu Nicolas
 */
 /* /////////////////////
-Les Bases
+Les bases
 //////////////////////// */
-a, p {
-  font-family: "Montserrat", serif;
-  font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h3 {
-  font-family: "Sriracha", serif;
+img {
+  max-width: 100%;
 }
 
-/* /////////////////////
-Les Variables
-//////////////////////// */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+input {
+  font-family: inherit;
+}
+
+h1, h2 {
+  font-family: "Sunflower", serif;
+}
+
+img + h3,
+h2 + p {
+  margin-top: 1rem;
+}
+
+h3 + p {
+  margin-top: 0.75rem;
+}
+
+p {
+  line-height: 1.3;
+}
+
+.flex-avec-gap {
+  display: flex;
+  gap: 20px;
+}
+
 /* /////////////////////////
 Les composants
 /////////////////////////// */
-.nav_list {
+[id=nav-principale] {
   display: flex;
-  gap: 20px;
-  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem;
 }
 
-.nav_link {
-  text-decoration: none;
+[id=nav-principale] > div {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+
+[id=nav-principale] span {
+  font-size: 1.728rem;
+}
+
+[id=nav-principale] a {
   color: black;
 }
 
-/* *******************
-Le composant .carte
-********************** */
-.carte {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-}
-.carte--grande {
-  padding: 40px;
-}
-.carte__image img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-.carte__contenu {
-  margin-top: 15px;
-}
-.carte__titre {
-  font-size: 24px;
-  color: #333;
-}
-.carte__description {
-  font-size: 16px;
-  color: #666;
-}
-.carte__bouton {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.carte__bouton--actif {
-  background-color: #0056b3;
-}
-.carte__bouton:hover {
-  background-color: #0056b3;
+.bouton {
+  background-color: rgb(44, 100, 133);
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: bold;
 }
 
-.hero {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background-image: url("<?php echo get_template_directory_uri(); ?>../images/maldives.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  filter: contrast(80%);
+.bouton.contact {
+  background-color: white;
+  max-width: max-content;
+  color: black;
 }
-.hero__contenu {
+
+.champ-recherche {
+  padding: 0.5rem;
+}
+
+.contenu-sur-image {
+  position: relative;
+  aspect-ratio: 16/9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.contenu-sur-image > img {
   position: absolute;
-  top: 30%;
-  left: 15%;
-  max-width: 900px;
-  margin-inline: auto;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0.6;
+}
+.contenu-sur-image div {
+  position: relative;
+  max-width: 60ch;
+  text-align: center;
+}
+.contenu-sur-image div > * + * {
+  margin-top: 20px;
+}
+
+.contenu-sur-image a {
+  color: white;
+  display: block;
+}
+
+.contenu-sur-image p + a {
+  margin-top: 0.75rem;
+}
+
+.post header + div {
+  margin-top: 4rem;
+}
+
+.post article p + a {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.bandeau {
+  background-color: rgb(44, 100, 133);
+  text-align: center;
+  padding: 5rem;
+}
+
+.bandeau :is(h2, p) {
   color: white;
 }
 
-.hero__titre {
-  font-size: 4rem;
+.bandeau a {
+  display: block;
+  margin-inline: auto;
+}
+
+.bandeau h2 + p {
+  margin-top: 1rem;
+}
+
+.bandeau p + a {
+  margin-top: 2rem;
+}
+
+.galerie header + article {
+  margin-top: 4rem;
+}
+
+.boite-icones {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.boite-icones img {
+  max-width: 36px;
+}
+
+[id=nav-pied-page] {
+  border-top: 2px solid lightseagreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem;
 }
 
 /* /////////////////////////
@@ -110,7 +196,7 @@ Layout
 /////////////////////////// */
 body {
   display: grid;
-  grid-template-columns: 1fr min(100% - 40px, 1000px) 1fr;
+  grid-template-columns: 1fr min(100% - 40px, 1500px) 1fr;
   gap: 20px;
 }
 
@@ -118,97 +204,26 @@ body > * {
   grid-column: 1/-1;
 }
 
+.plein-plan {
+  grid-column: 1/-1;
+}
+
 main {
   display: grid;
   grid-template-columns: subgrid;
-  gap: 20px;
+  gap: clamp(2.5rem, 5vw, 5rem) 20px;
 }
 
 main > * {
   grid-column: 2;
 }
 
-.full-bleed {
-  grid-column: 1/-1;
-}
-
-.grid_cartes {
+.grille-cartes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
-  gap: 20px;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 1000;
-}
-.header__logo {
-  max-width: 90px;
-}
-.header__nav {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.header__check {
-  display: none;
-}
-
-@media screen and (max-width: 850px) {
-  .header:has(.header__check:not(:checked)) .header__nav {
-    display: none;
-  }
-  .header:has(.header__check:checked) .header__nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  .header__check {
-    appearance: none;
-    display: block;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  .header__check::after {
-    content: " ☱ Menu";
-  }
-  .nav_list {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  .nav__item {
-    font-size: 1.5rem;
-  }
-  .header__search {
-    margin-top: 2rem;
-  }
-}
-.footer {
-  text-align: center;
-  background-color: lightgray;
-  padding: 20px;
-}
-
-.footer__social {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 12px;
-}
-
-.footer__social__img {
-  max-width: 26px;
+.grille-cartes.img-seul {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }/*# sourceMappingURL=style.css.map */

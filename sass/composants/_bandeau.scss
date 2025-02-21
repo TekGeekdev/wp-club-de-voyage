@@ -1,0 +1,19 @@
+.bandeau{
+    background-color: $couleur-secondaire;
+    text-align: center;
+    padding: $rythme-large;
+}
+.bandeau :is(h2,p){
+    color: white;
+}
+.bandeau a{
+    display: block;
+    margin-inline: auto;
+}
+.bandeau h2+p{
+    margin-top: $rythme-petit;
+}
+
+.bandeau p+a{
+    margin-top: $rythme-regulier;
+}

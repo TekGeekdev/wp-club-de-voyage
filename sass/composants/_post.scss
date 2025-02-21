@@ -1,0 +1,8 @@
+.post header+div{
+    margin-top: $rythme-moyen;
+}
+
+.post article p+a{
+    display: block;
+    margin-top: $rythme-mince;
+}

@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr min(calc(100% - 40px), 1500px) 1fr;
+    gap: 20px;
+}
+
+body>*{
+    grid-column:  1/-1;
+}
+
+.plein-plan{
+    grid-column: 1/-1;
+}
+main{
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: $rythme-large-clp 20px;
+}
+
+main>*{
+    grid-column: 2;
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: $police-p;
+}
+input {
+    font-family: inherit;
+}
+h1,h2{
+    font-family: $police-titre;
+}
+
+img+h3,
+h2+p{
+    margin-top: $rythme-petit;
+}
+h3+p{
+    margin-top: $rythme-mince;
+}
+p{
+    line-height: 1.3;
+}
+
+.flex-avec-gap{
+    display: flex;
+    gap: 20px;
+}

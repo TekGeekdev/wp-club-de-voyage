@@ -1,0 +1,20 @@
+[id="nav-principale"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: $rythme-petit;
+}
+
+[id="nav-principale"]>div{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+}
+
+[id="nav-principale"] span{
+    font-size: $h4;
+}
+[id="nav-principale"] a{
+    color: black;
+}

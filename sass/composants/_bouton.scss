@@ -1,0 +1,13 @@
+.bouton{
+  background-color: $couleur-secondaire;
+  color: white;
+  border-radius: 5px;
+  padding: $rythme-tres-mince;
+  font-weight: bold;
+}
+
+.bouton.contact{
+  background-color: white;
+  max-width: max-content;
+  color: black;
+}

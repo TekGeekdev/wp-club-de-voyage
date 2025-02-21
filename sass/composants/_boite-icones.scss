@@ -1,0 +1,10 @@
+.boite-icones{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.boite-icones img{
+    max-width: 36px;
+}
