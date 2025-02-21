@@ -1,76 +1,114 @@
 <?php get_header(); ?>
 
 <body>
-    <header>
-        <div class="entete global">
-            <figure class="entete__logo">
-                <img src="" alt="">
-            </figure>
-            <div class="entete__nav">
-                <nav class="entete__menu">
-                    <ul class="menu">
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Aventure</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a" href="#">Sportive</a>
-                        </li>
-                        <li class="menu__li">
-                            <a class="menu__a"  href="#">Culturelle</a>
-                        </li>
-                        <li class="menu__li">
-                            <a  class="menu__a" href="#">Zen</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="entete__recherche">
-                    <form action="" class="recherche">
-                        <input type="text" class="recherche__input">
-                        <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="20" height="20">
-                    </form>
+    <nav id="nav-principale" class="plein-plan">
+        <div>
+            <span>Club de voyage</span>
+            <a href="#">Acceuil</a>
+            <a href="#">Voyage</a>
+            <a href="#">Destination</a>
+        </div>
+        <form action="">
+            <input type="text" id="recherche" name="recherche" placeholder="faire une recherche"
+                class="champ-recherche">
+            <input type="submit" value="Rechercher" class="bouton">
+        </form>
+    </nav>
+    <main>
+        <header class="contenu-sur-image plein-plan">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tour-eiffel.jpg" alt="image destination">
+            <div>
+                <h1>Chsoissisez la destination de vos rêves</h1>
+                <p>Un choix de plus de 200 destinations</p>
+                <p>Ledeur Mathieu</p>
+                <p>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</p>
+                <p>(514) 254-7131</p>
+                <a href="mailto:name@maisonneuve.com">Notre email</a>
+                <div class="boite-icones">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt="facebook">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.png" alt="instagram">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="twitter">
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="hero__contenu global">
-            <h1 class="hero__titre">
-                Club de voyage
-            </h1>
-            <p class="hero__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur est officiis, mollitia minus asperiores quas libero saepe consequuntur at blanditiis et eligendi, sequi sit quae laboriosam, ex delectus nesciunt.
-            </p>
-            <a href="" class="hero__courriel">
-                info@cmaisonneuve.qc.ca
-            </a>
-            <button class="hero__bouton">
-                Inscription
-            </button>
-            <div class="hero__icone-app">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/maldives.jpg" alt="">
-                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=paypal&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
+        </header>
+        <section class="post">
+            <header>
+                <h2>Destinations populaires</h2>
+            </header>
+            <div class="grille-cartes">
+                <article>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mont-st-michel.jpeg" alt="">
+                    <h3>Welcome</h3>
+                    <p>If there is one unmissable visit to be made in Brittany, it is to the bay of Mont Saint-Michel
+                        and its famous Mount (2½ hours from Lorient). One tiny precision: the Mount is actually in
+                        Normandy, but the bay of Mont-Saint-Michel is in Brittany!</p>
+                    <a href="#">Plus d'informations</a>
+                </article>
+                <article>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mont-st-michel.jpeg" alt="">
+                    <h3>Welcome</h3>
+                    <p>If there is one unmissable visit to be made in Brittany, it is to the bay of Mont Saint-Michel
+                        and its famous Mount (2½ hours from Lorient). One tiny precision: the Mount is actually in
+                        Normandy, but the bay of Mont-Saint-Michel is in Brittany!</p>
+                    <a href="#">Plus d'informations</a>
+                </article>
+                <article>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mont-st-michel.jpeg" alt="">
+                    <h3>Welcome</h3>
+                    <p>If there is one unmissable visit to be made in Brittany, it is to the bay of Mont Saint-Michel
+                        and its famous Mount (2½ hours from Lorient). One tiny precision: the Mount is actually in
+                        Normandy, but the bay of Mont-Saint-Michel is in Brittany!</p>
+                    <a href="#">Plus d'informations</a>
+                </article>
             </div>
+        </section>
+        <div class="bandeau plein-plan">
+            <h2>Partez à l’aventure avec nous !</h2>
+            <p>Rêvez, réservez, voyagez ! Contactez notre agence dès aujourd’hui et laissez-nous créer le voyage de vos
+                rêves</p>
+            <a href="" class="bouton contact"> Contactez-nous !</a>
         </div>
-    </section>
-    <section class="galerie">
-        <figure class="galerie__fig">
-            <img src="" alt="">
-        </figure>
-    </section>
- 
-    <section class="promotion">
-        <div class="carte carte--grande">
-            <div class="carte__image">
-                <img src="images/img1.jpg" alt="Image de voyage">
+        <section class="galerie">
+            <header>
+                <h2>Nos Plus Beaux Souvenirs de Voyage.</h2>
+                <p>Plongez dans l’évasion à travers notre galerie photo ! Découvrez en images les destinations
+                    incroyables.</p>
+            </header>
+            <article class="grille-cartes img-seul">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/jardin-de-versailles.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/chateau-de-grimaud.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mont-st-michel.jpeg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/saint-tropez-1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/port-grimaud.jpg" alt="">
+            </article>
+        </section>
+        <footer id="nav-pied-page" class="plein-plan">
+            <div class="flex-avec-gap">
+                <a href="#">Acceuil</a>
+                <a href="#">Voyage</a>
+                <a href="#">Destination</a>
             </div>
-            <div class="carte__contenu">
-                <h2 class="carte__titre">Destination de rêve</h2>
-                <p class="carte__description">Découvrez des endroits magnifiques à travers le monde.</p>
-                <button class="carte__bouton carte__bouton--actif">Réserver</button>
+            <form action="">
+                <input type="text" id="recherche" name="recherche" placeholder="faire une recherche"
+                    class="champ-recherche">
+                <input type="submit" value="Rechercher" class="bouton">
+            </form>
+            <div class="flex-avec-gap">
+                <a href="#">Acceuil</a>
+                <a href="#">Voyage</a>
+                <a href="#">Destination</a>
             </div>
-        </div>
-    </section>
+            <div class="flex-avec-gap">
+                <p>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</p>
+                <p>(514) 254-7131</p>
+                <a href="mailto:name@maisonneuve.com">Notre email</a>
+            </div>
+            <div class="boite-icones">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt="facebook">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.png" alt="instagram">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="twitter">
+            </div>
+        </footer>
+
 </body>
+</html>
