@@ -13,7 +13,7 @@
                         <?php if (has_post_thumbnail()) { ?>
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         <?php } else { ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/default-image.jpg" alt="Image par défaut"> 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/saint-tropez-1.jpg" alt="Image défaut"> 
                         <?php } ?>
                         <h3><?php the_title(); ?></h3>
                     </header>
