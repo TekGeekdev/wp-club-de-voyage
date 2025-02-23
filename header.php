@@ -15,3 +15,21 @@
         rel="stylesheet">
         <?php wp_head(); ?>
 </head>
+<body>
+    <nav id="nav-principale" class="plein-plan">
+        <div>
+            <span>Club de voyage</span>
+            <?php
+    wp_nav_menu(array(
+        'menu' => 'principal',
+        'theme_location' => 'main-menu',
+        'container' => false,
+    ));
+    ?>
+        </div>
+        <form action="<?php echo home_url('/'); ?>">
+            <input type="text" id="recherche" name="recherche" placeholder="<?php echo esc_attr_x('Rechercher des destinations...', 'placeholder') ?>" <?php echo esc_attr_x('Rechercher des destinations...', 'placeholder') ?>
+                class="champ-recherche">
+            <button type="submit" class="bouton"><?php echo esc_html_x('Search', 'submit button') ?></button>
+        </form>
+    </nav>

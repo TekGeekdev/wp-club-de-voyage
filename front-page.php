@@ -1,19 +1,6 @@
 <?php get_header(); ?>
 
-<body>
-    <nav id="nav-principale" class="plein-plan">
-        <div>
-            <span>Club de voyage</span>
-            <a href="#">Acceuil</a>
-            <a href="#">Voyage</a>
-            <a href="#">Destination</a>
-        </div>
-        <form action="">
-            <input type="text" id="recherche" name="recherche" placeholder="faire une recherche"
-                class="champ-recherche">
-            <input type="submit" value="Rechercher" class="bouton">
-        </form>
-    </nav>
+
     <main>
         <header class="contenu-sur-image plein-plan">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tour-eiffel.jpg" alt="image destination">
