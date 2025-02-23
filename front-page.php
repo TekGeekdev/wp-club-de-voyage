@@ -23,30 +23,17 @@
                 <h2>Destinations populaires</h2>
             </header>
             <div class="grille-cartes">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <article>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mont-st-michel.jpeg" alt="">
-                    <h3>Welcome</h3>
-                    <p>If there is one unmissable visit to be made in Brittany, it is to the bay of Mont Saint-Michel
-                        and its famous Mount (2½ hours from Lorient). One tiny precision: the Mount is actually in
-                        Normandy, but the bay of Mont-Saint-Michel is in Brittany!</p>
-                    <a href="#">Plus d'informations</a>
+                        <?php if (has_post_thumbnail()) { ?>
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="image-mise-en-avant"> 
+                        <?php } ?>
+                    <h3><?php the_title(); ?></h3>
+                    <p><?php echo wp_trim_words(get_the_excerpt(), 25, " ... "); ?></p>
+                    <a href="<?php the_permalink(); ?>">Plus d'informations</a>
                 </article>
-                <article>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mont-st-michel.jpeg" alt="">
-                    <h3>Welcome</h3>
-                    <p>If there is one unmissable visit to be made in Brittany, it is to the bay of Mont Saint-Michel
-                        and its famous Mount (2½ hours from Lorient). One tiny precision: the Mount is actually in
-                        Normandy, but the bay of Mont-Saint-Michel is in Brittany!</p>
-                    <a href="#">Plus d'informations</a>
-                </article>
-                <article>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mont-st-michel.jpeg" alt="">
-                    <h3>Welcome</h3>
-                    <p>If there is one unmissable visit to be made in Brittany, it is to the bay of Mont Saint-Michel
-                        and its famous Mount (2½ hours from Lorient). One tiny precision: the Mount is actually in
-                        Normandy, but the bay of Mont-Saint-Michel is in Brittany!</p>
-                    <a href="#">Plus d'informations</a>
-                </article>
+                <?php endwhile; endif; ?>
+
             </div>
         </section>
         <div class="bandeau plein-plan">
