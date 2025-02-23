@@ -1,8 +1,12 @@
 <footer id="nav-pied-page" class="plein-plan">
             <div class="flex-avec-gap">
-                <a href="#">Acceuil</a>
-                <a href="#">Voyage</a>
-                <a href="#">Destination</a>
+            <?php
+    wp_nav_menu(array(
+        'menu' => 'principal',
+        'theme_location' => 'main-menu',
+        'container' => false,
+    ));
+    ?>
             </div>
             <form action="">
                 <input type="text" id="recherche" name="recherche" placeholder="faire une recherche"
@@ -10,12 +14,8 @@
                 <input type="submit" value="Rechercher" class="bouton">
             </form>
             <div class="flex-avec-gap">
-                <a href="#">Acceuil</a>
-                <a href="#">Voyage</a>
-                <a href="#">Destination</a>
-            </div>
-            <div class="flex-avec-gap">
-                <p>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</p>
+                <p>3800 R. Sherbrooke E</p>
+                <p>Montréal, QC H1X 2A2</p>
                 <p>(514) 254-7131</p>
                 <a href="mailto:name@maisonneuve.com">Notre email</a>
             </div>

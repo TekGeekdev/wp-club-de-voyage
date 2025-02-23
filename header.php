@@ -18,7 +18,7 @@
 <body>
     <nav id="nav-principale" class="plein-plan">
         <div>
-            <span>Club de voyage</span>
+            <span><a href="https://gftnth00.mywhc.ca/33w6/">Club de voyage</a></span>
             <?php
     wp_nav_menu(array(
         'menu' => 'principal',

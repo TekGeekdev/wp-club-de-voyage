@@ -6,3 +6,14 @@
     flex-wrap: wrap;
     padding: $rythme-moyen;
 }
+
+[id="nav-pied-page"] .flex-avec-gap{
+    flex-direction: column;
+}
+
+[id="nav-pied-page"] .menu ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    list-style-type: none;
+}

@@ -202,6 +202,17 @@ Les composants
   padding: 4rem;
 }
 
+[id=nav-pied-page] .flex-avec-gap {
+  flex-direction: column;
+}
+
+[id=nav-pied-page] .menu ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  list-style-type: none;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */
