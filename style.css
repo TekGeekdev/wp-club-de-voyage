@@ -89,6 +89,21 @@ Les composants
   list-style-type: none;
 }
 
+[id=nav-principale] > span a {
+  text-decoration: none;
+}
+
+[id=nav-principale] .acceuil {
+  text-decoration: none;
+}
+
+[id=nav-principale] .menu {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  list-style-type: none;
+}
+
 .bouton {
   background-color: rgb(44, 100, 133);
   color: white;
@@ -222,6 +237,9 @@ Les composants
   display: flex;
   gap: 10px;
   flex-direction: column;
+}
+
+[id=nav-pied-page] ul {
   list-style-type: none;
 }
 

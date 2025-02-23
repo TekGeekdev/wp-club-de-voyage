@@ -25,3 +25,18 @@
     align-items: baseline;
     list-style-type: none;
 }
+
+[id="nav-principale"]>span a{
+    text-decoration: none;
+}
+
+[id="nav-principale"] .acceuil{
+    text-decoration: none;
+}
+
+[id="nav-principale"] .menu{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    list-style-type: none;
+}
