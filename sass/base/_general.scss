@@ -30,3 +30,7 @@ p{
     display: flex;
     gap: 20px;
 }
+
+ul::marker {
+    content: none; 
+}

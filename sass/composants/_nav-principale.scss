@@ -18,3 +18,10 @@
 [id="nav-principale"] a{
     color: black;
 }
+
+[id="nav-principale"] .menu ul{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    list-style-type: none;
+}

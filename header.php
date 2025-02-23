@@ -27,7 +27,7 @@
     ));
     ?>
         </div>
-        <form action="<?php echo home_url('/'); ?>">
+        <form role="search" method="get" action="<?php echo home_url('/'); ?>">
             <input type="text" id="recherche" name="recherche" placeholder="<?php echo esc_attr_x('Rechercher des destinations...', 'placeholder') ?>" <?php echo esc_attr_x('Rechercher des destinations...', 'placeholder') ?>
                 class="champ-recherche">
             <button type="submit" class="bouton"><?php echo esc_html_x('Search', 'submit button') ?></button>
