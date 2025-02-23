@@ -11,3 +11,11 @@
   max-width: max-content;
   color: black;
 }
+
+.bouton.galerie{
+  background-color: white;
+  border: 3px solid $couleur-secondaire;
+  color: black;
+  display: block;
+  width: max-content;
+}

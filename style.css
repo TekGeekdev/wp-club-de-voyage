@@ -103,6 +103,14 @@ Les composants
   color: black;
 }
 
+.bouton.galerie {
+  background-color: white;
+  border: 3px solid rgb(44, 100, 133);
+  color: black;
+  display: block;
+  width: max-content;
+}
+
 .champ-recherche {
   padding: 0.5rem;
 }
@@ -180,6 +188,10 @@ Les composants
 
 .galerie header + article {
   margin-top: 4rem;
+}
+
+.galerie article + a {
+  margin-top: 1rem;
 }
 
 .boite-icones {

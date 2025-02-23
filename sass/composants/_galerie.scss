@@ -1,3 +1,7 @@
 .galerie header+article{
     margin-top: $rythme-moyen;
 }
+
+.galerie article+a{
+    margin-top: $rythme-petit;
+}

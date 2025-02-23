@@ -55,6 +55,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/saint-tropez-1.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/port-grimaud.jpg" alt="">
             </article>
+            <a href="https://gftnth00.mywhc.ca/33w6/?page_id=131" class="bouton galerie"> En voir plus</a>
         </section>
 
 <?php get_footer(); ?>
