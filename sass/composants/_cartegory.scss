@@ -1,0 +1,19 @@
+.category h1+p {
+    margin-top: $rythme-regulier;
+}
+
+.category .category__carte header+p{
+    margin-top: $rythme-mince;
+}
+
+.category article+article{
+    margin-top: $rythme-regulier;
+}
+
+.category .category__carte p+a{
+    margin-top: $rythme-petit;
+}
+
+.category .category__carte img{
+    max-width: 600px;
+}

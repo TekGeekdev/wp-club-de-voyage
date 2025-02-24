@@ -243,6 +243,26 @@ Les composants
   list-style-type: none;
 }
 
+.category h1 + p {
+  margin-top: 2rem;
+}
+
+.category .category__carte header + p {
+  margin-top: 0.75rem;
+}
+
+.category article + article {
+  margin-top: 2rem;
+}
+
+.category .category__carte p + a {
+  margin-top: 1rem;
+}
+
+.category .category__carte img {
+  max-width: 600px;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */

@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
-<main class="contenu">
+<main class="category">
     <h1><?php single_cat_title(); ?></h1> 
     <p><?php echo category_description(); ?></p> 
 
     <?php if (have_posts()) : ?>
-        <div class="grille">
+        <div class="">
             <?php
             while (have_posts()) : the_post(); ?>
-                <article class="carte">
+                <article class="category__carte">
                     <header>
                         <?php if (has_post_thumbnail()) { ?>
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">

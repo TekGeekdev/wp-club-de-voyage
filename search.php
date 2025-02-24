@@ -1,6 +1,7 @@
 <?php get_header(); ?>
+<?= "test" ?>
 
-<main class="contenu">
+<main class="search">
     <h1><?php printf(__('Résultats de recherche pour: %s', 'textdomain'), get_search_query()); ?></h1>
 
     <?php if (have_posts()) : ?>
