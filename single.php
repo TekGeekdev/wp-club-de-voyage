@@ -17,9 +17,8 @@
                     <a href="<?php the_permalink(); ?>">Plus d'informations</a>
                 </article>
                 <?php endwhile; endif; ?>
-
             </div>
         </section>
-
+    </main>
 
 <?php get_footer(); ?>

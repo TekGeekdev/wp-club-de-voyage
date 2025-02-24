@@ -5,16 +5,17 @@
         <header class="contenu-sur-image plein-plan">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tour-eiffel.jpg" alt="image destination">
             <div>
-                <h1>Chsoissisez la destination de vos rêves</h1>
+                <h1>Choissisez la destination de vos rêves</h1>
                 <p>Un choix de plus de 200 destinations</p>
                 <p>Ledeur Mathieu</p>
                 <p>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</p>
                 <p>(514) 254-7131</p>
                 <a href="mailto:name@maisonneuve.com">Notre email</a>
                 <div class="boite-icones">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt="facebook">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.png" alt="instagram">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="twitter">
+                    <?php $uri = get_template_directory_uri(); ?>
+                    <img src="<?php echo $uri; ?>/assets/images/facebook.png" alt="facebook">
+                    <img src="<?php echo $uri; ?>/assets/images/instagram.png" alt="instagram">
+                    <img src="<?php echo $uri; ?>/assets/images/twitter.png" alt="twitter">
                 </div>
             </div>
         </header>
@@ -57,5 +58,5 @@
             </article>
             <a href="https://gftnth00.mywhc.ca/33w6/?page_id=131" class="bouton galerie"> En voir plus</a>
         </section>
-
+    </main>
 <?php get_footer(); ?>
