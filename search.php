@@ -1,11 +1,10 @@
 <?php get_header(); ?>
-<?= "test" ?>
 
 <main class="search">
     <h1><?php printf(__('Résultats de recherche pour: %s', 'textdomain'), get_search_query()); ?></h1>
 
     <?php if (have_posts()) : ?>
-        <div class="grille">
+        <div class="grille-cartes large">
             <?php
             
             while (have_posts()) : the_post(); ?>

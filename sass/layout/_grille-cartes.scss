@@ -7,3 +7,9 @@
 .grille-cartes.img-seul {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
+
+.grille-cartes.large {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
