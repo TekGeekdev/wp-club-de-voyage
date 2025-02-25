@@ -8,7 +8,7 @@
             <?php
             
             while (have_posts()) : the_post(); ?>
-                <article class="carte">
+                <article class="carte-search zoomEffet ombre-boite">
                     <header>
                         <?php if (has_post_thumbnail()) { ?>
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
