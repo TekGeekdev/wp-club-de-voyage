@@ -1,0 +1,12 @@
+.single h3+p{
+    margin-top: $rythme-mince;
+}
+
+.single p+a,
+.single img+h3{
+    margin-top: $rythme-petit;
+}
+
+.single a{
+    display: block;
+}
