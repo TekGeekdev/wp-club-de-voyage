@@ -1,5 +1,7 @@
 # Club de voyage
 
+### [lien vers le site du thème](https://gftnth00.mywhc.ca/33w6/)
+
 ## Travail pratique pour initiation aux gestionnaire de contenu Wordpress
 
 - [x] Créer un site WordPress pour un club de voyage offrant à ses membres des voyages exclusifs vers des destinations uniques à travers le monde.

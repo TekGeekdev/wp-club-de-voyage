@@ -8,11 +8,13 @@
     ));
     ?>
             </div>
-            <form action="">
-                <input type="text" id="recherche" name="recherche" placeholder="faire une recherche"
-                    class="champ-recherche">
-                <input type="submit" value="Rechercher" class="bouton">
-            </form>
+            <form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
+        <label>
+            <span class="screen-reader-text"><?php echo _x('Search for:', 'label') ?></span>
+            <input type="search" class="champ-recherche" placeholder="<?php echo esc_attr_x('Rechercher des destinations...', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" />
+        </label>
+        <button type="submit" class="bouton"><?php echo esc_html_x('Search', 'submit button') ?></button>
+         </form>
             <div class="flex-avec-gap">
                 <p>3800 R. Sherbrooke E</p>
                 <p>Montréal, QC H1X 2A2</p>
